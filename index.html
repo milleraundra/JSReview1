@@ -5,20 +5,17 @@
     <script type="text/javascript" src="bower_components/Materialize/dist/js/materialize.min.js"></script>
     <link type="text/css" rel="stylesheet" href="bower_components/Materialize/dist/css/materialize.min.css"  media="screen,projection"/>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <!-- <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"> -->
-    <!-- <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script> -->
-
-    <!-- DO I NEED API SCRIPT TAG HERE -->
-
     <script src="bower_components/moment/min/moment.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
     <link rel="stylesheet" href="build/css/vendor.css">
+    <link rel="stylesheet" href="build/css/styles.css">
+
     <title></title>
   </head>
   <body class="body">
     <div class="container">
       <!-- <div class="row nav-wrapper teal lighten-2"> -->
-          <h1 class="brand-logo top-nav ">GitHub Search</h1>
+          <h1 class="header brand-logo top-nav ">GitHub User Search</h1>
           <h3>Find a GitHub User</h3>
        <!-- </div> -->
 
@@ -27,7 +24,7 @@
       <form id="search">
         <label for="username">Username:</label>
         <input type="text" name="username" id="username">
-        <button class="btn" type="submit">Search</button>
+        <button class="btn light-blue lighten-2" type="submit">Search</button>
       </form>
 
       <div id="results">
