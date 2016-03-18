@@ -5,11 +5,32 @@
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- DO I NEED API SCRIPT TAG HERE -->
+
     <script src="bower_components/moment/min/moment.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
     <title></title>
   </head>
   <body>
-    
+    <h1>GitHub Search</h1>
+    <h2>Find a GitHub User</h2>
+
+    <p>Enter a GitHub username below to see their public repositories.</p>
+
+    <form id="inputSearch">
+      <label for="username">Username:</label>
+      <input type="text" name="username" value="">
+      <button type="submit">Search</button>
+    </form>
+
+    <div id="results">
+      <h3 id="foundUser"></h3>
+      <h4 id="fullName"></h4>
+      <ul id="publicRepos">
+        <!-- Repository name append here -->
+      </ul>
+    </div>
+
   </body>
 </html>
