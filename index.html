@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="build/css/vendor.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="bower_components/Materialize/dist/js/materialize.min.js"></script>
     <link type="text/css" rel="stylesheet" href="bower_components/Materialize/dist/css/materialize.min.css"  media="screen,projection"/>
@@ -13,13 +12,14 @@
 
     <script src="bower_components/moment/min/moment.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
+    <link rel="stylesheet" href="build/css/vendor.css">
     <title></title>
   </head>
   <body class="body">
     <div class="container">
-
-          <h1 class="top-nav ">GitHub Search</h1>
-          <h2>Find a GitHub User</h2>
+      <!-- <div class="row nav-wrapper teal lighten-2"> -->
+          <h1 class="brand-logo top-nav ">GitHub Search</h1>
+          <h3>Find a GitHub User</h3>
        <!-- </div> -->
 
       <p class="flow-text">Enter a GitHub username below to see their public repositories.</p>
@@ -27,13 +27,14 @@
       <form id="search">
         <label for="username">Username:</label>
         <input type="text" name="username" id="username">
-        <button type="submit">Search</button>
+        <button class="btn" type="submit">Search</button>
       </form>
 
       <div id="results">
         <h3 id="fullName"></h3>
-        <h4 id="foundUser"></h4>
-        <ul id="publicRepos">
+        <h5 id="foundUser"></h5>
+        <h5 id="totalRepos"></h5>
+        <ul class="collection" id="publicRepos">
           <!-- Repository name append here -->
         </ul>
       </div>

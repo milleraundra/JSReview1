@@ -3,11 +3,10 @@ var getRepositories = require('./github-repos.js').getRepositories;
 
 exports.getUsername = function(username) {
   $.get('https://api.github.com/users/' + username + '?access_token=' + apiKey).then(function(response){
-    console.log("inside getUsername");
-    $('#foundUser').text(response.login);
-    console.log(response.login);
+    console.log(response);
     $('#fullName').text(response.name);
-    console.log(response.name);
+    $('#foundUser').text("Username: " + response.login);
+    $('#totalRepos').text("Total Repositories: " + response.public_repos);
     //run getRepositories
     getRepositories(username);
 

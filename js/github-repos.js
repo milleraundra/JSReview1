@@ -6,12 +6,14 @@ exports.getRepositories = function(username){
     $('#publicRepos').empty();
 
     response.forEach(function(single_repository) {
-      $('#publicRepos').append("<li><a href=" + single_repository.html_url + " target='_blank'>" + single_repository.name + "</a><small> (" + single_repository.language + ")</small>");
-
+      //debugger;
       if (single_repository.description === "") {
-        $('#publicRepos').append("</li>");
+        $('#publicRepos').append(
+          "<li class='collection-item'><span class='title'>Repository: <a href=" + single_repository.html_url + " target='_blank'>" + single_repository.name + "</a></span><p>Language: " + single_repository.language + "</p></li>");
+
       } else {
-        $('#publicRepos').append("<ul><li>" + single_repository.description + "</li></ul></li>");
+        $('#publicRepos').append(
+          "<li class='collection-item'><span class='title'>Repository: <a href=" + single_repository.html_url + "target='_blank'>" + single_repository.name + "</a></span><p>Language: " + single_repository.language + "<br>Description: " + single_repository.description + "</p></li>");
       }
     });
   }).fail(function(error) {

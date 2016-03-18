@@ -14,7 +14,9 @@ var lib = require('bower-files')({
   "overrides":{
     "Materialize" : {
       "main": [
-        './dist/*/*.min.*'
+        './dist/*/*.min.*',
+        './font/material-design-icons/*',
+        './font/roboto/*',
         //"dist/materialize.css",
         //"bin/materialize.js"
       ]
