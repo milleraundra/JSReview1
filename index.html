@@ -2,9 +2,12 @@
 <html>
   <head>
     <link rel="stylesheet" href="build/css/vendor.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="bower_components/Materialize/dist/js/materialize.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="bower_components/Materialize/dist/css/materialize.min.css"  media="screen,projection"/>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"> -->
+    <!-- <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script> -->
 
     <!-- DO I NEED API SCRIPT TAG HERE -->
 
@@ -12,25 +15,28 @@
     <script type="text/javascript" src="build/js/app.js"></script>
     <title></title>
   </head>
-  <body>
-    <h1>GitHub Search</h1>
-    <h2>Find a GitHub User</h2>
+  <body class="body">
+    <div class="container">
 
-    <p>Enter a GitHub username below to see their public repositories.</p>
+          <h1 class="top-nav ">GitHub Search</h1>
+          <h2>Find a GitHub User</h2>
+       <!-- </div> -->
 
-    <form id="search">
-      <label for="username">Username:</label>
-      <input type="text" name="username" id="username">
-      <button type="submit">Search</button>
-    </form>
+      <p class="flow-text">Enter a GitHub username below to see their public repositories.</p>
 
-    <div id="results">
-      <h3 id="fullName"></h3>
-      <h4 id="foundUser"></h4>
-      <ul id="publicRepos">
-        <!-- Repository name append here -->
-      </ul>
+      <form id="search">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username">
+        <button type="submit">Search</button>
+      </form>
+
+      <div id="results">
+        <h3 id="fullName"></h3>
+        <h4 id="foundUser"></h4>
+        <ul id="publicRepos">
+          <!-- Repository name append here -->
+        </ul>
+      </div>
     </div>
-
   </body>
 </html>

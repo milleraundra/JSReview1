@@ -12,11 +12,11 @@ var buildProduction = utilities.env.production;
 var browserSync = require('browser-sync').create();
 var lib = require('bower-files')({
   "overrides":{
-    "bootstrap" : {
+    "Materialize" : {
       "main": [
-        "less/bootstrap.less",
-        "dist/css/bootstrap.css",
-        "dist/js/bootstrap.js"
+        './dist/*/*.min.*'
+        //"dist/materialize.css",
+        //"bin/materialize.js"
       ]
     }
   }
