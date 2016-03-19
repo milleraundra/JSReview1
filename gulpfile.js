@@ -17,8 +17,6 @@ var lib = require('bower-files')({
         './dist/*/*.min.*',
         './font/material-design-icons/*',
         './font/roboto/*',
-        //"dist/materialize.css",
-        //"bin/materialize.js"
       ]
     }
   }
