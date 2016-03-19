@@ -14,26 +14,22 @@
   </head>
   <body class="body">
     <div class="container">
-      <!-- <div class="row nav-wrapper teal lighten-2"> -->
-          <h1 class="header brand-logo top-nav ">GitHub User Search</h1>
-          <h3>Find a GitHub User</h3>
-       <!-- </div> -->
+      <h1 class="header brand-logo top-nav ">GitHub User Search</h1>
+      <h3>Find a GitHub User</h3>
 
       <p class="flow-text">Enter a GitHub username below to see their public repositories.</p>
 
       <form id="search">
         <label for="username">Username:</label>
         <input type="text" name="username" id="username">
-        <button class="btn light-blue lighten-2" type="submit">Search</button>
+        <button class="btn light-blue" type="submit">Search</button>
       </form>
 
       <div id="results">
         <h3 id="fullName"></h3>
         <h5 id="foundUser"></h5>
         <h5 id="totalRepos"></h5>
-        <ul class="collection" id="publicRepos">
-          <!-- Repository name append here -->
-        </ul>
+        <ul class="collection" id="publicRepos"></ul>
       </div>
     </div>
   </body>

@@ -7,7 +7,6 @@ exports.getUsername = function(username) {
     $('#fullName').text(response.name);
     $('#foundUser').text("Username: " + response.login);
     $('#totalRepos').text("Total Repositories: " + response.public_repos);
-    //run getRepositories
     getRepositories(username);
 
   }).fail(function(error){
